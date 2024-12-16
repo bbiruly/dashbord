@@ -46,7 +46,7 @@ const SignUp = () => {
     try {
       //CALL API SIGN UP ENPONT 
       const response = await axios.post(
-        `${api}/api/auth/register`,
+        `${api}/auth/register`,
         { name, email, password }
       );
 
