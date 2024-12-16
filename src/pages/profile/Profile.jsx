@@ -1,9 +1,9 @@
-import { logout } from "@/redux/slices/userSlice";
-import { clearUserPreferences } from "@/services/CookieManager";
-import { logoutUser } from "@/services/Logout";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { logoutUser } from "../../services/Logout";
+import { clearUserPreferences } from "../../services/CookieManager";
+import { logout } from "../../redux/slices/userSlice";
 
 const Profile = () => {
     const dispatch = useDispatch()

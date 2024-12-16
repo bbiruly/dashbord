@@ -12,7 +12,7 @@ import { MdLockOutline } from "react-icons/md";
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import logo from "../../assets/react.svg";
-import { api } from "@/constant/constant";
+import { api } from "../../constant/constant";
 
 const SignUp = () => {
   const navigate = useNavigate();

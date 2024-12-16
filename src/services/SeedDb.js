@@ -5,11 +5,12 @@ import { api } from "../constant/constant";
 
 
 
-export const seedDb = async ({ data }) => {
+export const seedDb = async (fileData ) => {
+  console.log(fileData)
   try {
     // Assuming the file has the columns: Day, Age, Gender, A, B, C, D, E, F
     // Map the data to the expected structure
-    const mappedData = data.map((item) => {
+    const mappedData = fileData.map((item) => {
       const date = item.Day ? item.Day.split("/").join("-") : ""
       return {
         Day: moment(date,"DD-MM-YYYY").valueOf(), 

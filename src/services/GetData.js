@@ -1,6 +1,6 @@
-import { api } from "@/constant/constant"
 import axios from "axios"
 import moment from "moment"
+import { api } from "../constant/constant"
 
 
 

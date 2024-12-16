@@ -1,5 +1,5 @@
-import { api } from "@/constant/constant"
 import axios from "axios"
+import { api } from "../constant/constant"
 
 export const logoutUser = async()=>{
     try {

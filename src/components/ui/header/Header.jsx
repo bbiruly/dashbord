@@ -4,12 +4,12 @@ import SearchBar from "../../global/SearchBar";
 import { FiSearch } from "react-icons/fi";
 import { MdOutlineLightMode, MdOutlineNightsStay, MdNotificationsNone } from "react-icons/md";
 import { AiOutlineLogout } from "react-icons/ai";
-import { logoutUser } from "@/services/Logout";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { clearUserPreferences } from "../../../services/CookieManager";
 import { logout } from "../../../redux/slices/userSlice";
+import { logoutUser } from "../../../services/Logout";
 
 const Header = () => {
   const dispatch = useDispatch();

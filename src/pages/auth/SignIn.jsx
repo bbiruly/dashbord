@@ -13,7 +13,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/slices/userSlice";
 import toast from "react-hot-toast";
-import { api } from "@/constant/constant";
+import { api } from "../../constant/constant";
 
 const SignIn = () => {
   const dispatch = useDispatch();

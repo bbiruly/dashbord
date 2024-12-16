@@ -1,10 +1,10 @@
 import  { useEffect, useState } from 'react';
 import * as XLSX from 'xlsx';
 import Papa from 'papaparse';
-import { seedDb } from '@/services/SeedDb';
-import CustomInput from '@/components/global/CustomInput';
 import { GoFile } from "react-icons/go";
 import { Check, Loader } from 'lucide-react';
+import {seedDb} from "../services/SeedDb"
+import CustomInput from '../components/global/CustomInput';
 
 
 
@@ -17,11 +17,12 @@ const FileUploader = () => {
     if (fileData.length) {
         setIsUpLoading(true)
         //seed data
-      seedDb({ data: fileData });
+        seedDb(fileData);
       setIsUpLoading(false)
       setIsSuccess(true)
     }
   }, [fileData]);
+  console.log(fileData)
 
   const handleFileUpload = (event) => {
     const file = event.target.files?.[0];

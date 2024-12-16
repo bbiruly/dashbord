@@ -1,6 +1,6 @@
-import CustomButton from '@/components/global/CustomButton';
-import { clearUserPreferences } from '@/services/CookieManager';
 import toast from 'react-hot-toast';
+import { clearUserPreferences } from '../../services/CookieManager';
+import CustomButton from '../../components/global/CustomButton';
 
 const Setting = () => {
   const handleResetPreferences = () => {

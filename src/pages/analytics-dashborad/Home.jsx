@@ -1,4 +1,4 @@
-import SubHeader from "@/components/ui/utiliti-header/SubHeader";
+import SubHeader from "../../components/ui/utiliti-header/SubHeader";
 
 const Home = () => {
   return <SubHeader />;
