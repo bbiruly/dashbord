@@ -4,8 +4,8 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 //backend link 
 // export const api = "https://visualize-dashboard.vercel.app/api"
-export const api = "http://localhost:4000/api"
-export const baseUrl = "http://localhost:5173/analytics";
+export const api = "https://dashbord-backend.onrender.com/api"
+export const baseUrl = "https://dashbord-alpha.vercel.app/analytics";
 
 export const links = [
     { label: "Dashboard", href: "/analytics", icon: MdOutlineAnalytics },
